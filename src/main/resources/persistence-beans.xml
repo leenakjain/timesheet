@@ -13,7 +13,7 @@
 	<context:annotation-config />
 
 	<!-- package to look for annotated classes -->
-	<context:component-scan base-package="org.timesheet.service.impl" />
+	<context:component-scan base-package="org.lnk.timesheet.service.impl" />
 
 	<!-- we will manage transactions with annotations -->
 	<tx:annotation-driven />
@@ -34,10 +34,10 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
 			<list>
-				<value>org.timesheet.domain.Employee</value>
-				<value>org.timesheet.domain.Manager</value>
-				<value>org.timesheet.domain.Task</value>
-				<value>org.timesheet.domain.Timesheet</value>
+				<value>org.lnk.timesheet.domain.Employee</value>
+				<value>org.lnk.timesheet.domain.Manager</value>
+				<value>org.lnk.timesheet.domain.Task</value>
+				<value>org.lnk.timesheet.domain.Timesheet</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
