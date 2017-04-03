@@ -4,7 +4,7 @@
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
 
-	<display-name>timesheet-app</display-name>
+	<display-name>timesheet</display-name>
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -43,5 +43,14 @@
 		<servlet-name>default</servlet-name>
 		<url-pattern>/resources/*</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+        classpath:persistence-beans.xml
+        classpath:controllers.xml
+    </param-value>
+  </context-param>
+
 
 </web-app>

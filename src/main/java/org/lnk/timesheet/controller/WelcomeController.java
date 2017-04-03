@@ -1,14 +1,15 @@
 package org.lnk.timesheet.controller;
 
+import java.util.Date;
+
+import javax.annotation.PostConstruct;
+
+import org.lnk.timesheet.web.helpers.EntityGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.lnk.timesheet.web.helpers.EntityGenerator;
- 
-import javax.annotation.PostConstruct;
-import java.util.Date;
  
 @Controller
 @RequestMapping("/welcome")
