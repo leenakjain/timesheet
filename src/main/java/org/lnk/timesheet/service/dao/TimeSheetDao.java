@@ -9,3 +9,4 @@ import org.lnk.timesheet.service.GenericDao;
 public interface TimesheetDao extends GenericDao<Timesheet, Long> {
     // no additional business operations atm
 }
+

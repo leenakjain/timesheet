@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/welcome1")
 public class WelcomeController {
  
-    @Autowired
+  /*  @Autowired
     private EntityGenerator entityGenerator;
  
     @RequestMapping(method = RequestMethod.GET)
@@ -28,6 +28,6 @@ public class WelcomeController {
     public void prepareFakeDomain() {
         entityGenerator.deleteDomain();
         entityGenerator.generateDomain();
-    }
+    }*/
  
 }
