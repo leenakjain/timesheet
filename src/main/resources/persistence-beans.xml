@@ -13,7 +13,7 @@
 	<context:annotation-config />
 
 	<!-- package to look for annotated classes -->
-	<context:component-scan base-package="org.lnk.timesheet.service.impl" />
+	<context:component-scan base-package="org.lnk.timesheet" />
 
 	<!-- we will manage transactions with annotations -->
 	<tx:annotation-driven />

@@ -107,7 +107,18 @@ public class ManagerController {
 		// everything OK, see remaining managers
 		return "redirect:/managers";
 	}
-
+	/**
+	 * Saves new manager to the database
+	 * @param manager Manager to save
+	 * @return redirects to managers
+	 */
+	@RequestMapping(method = RequestMethod.POST)
+	public String addManager(Manager manager) {
+	    managerDao.add(manager);
+	 
+	    return "redirect:/managers";
+	}
+	
 	/**
 	 * Handles ManagerDeleteException
 	 * 
