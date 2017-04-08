@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <%--@elvariable id="task" type="org.lnk.timesheet.domain.Task"--%>
-<%--@elvariable id="unassigned" type="java.util.List<org.timesheet.domain.Employee>"--%>
+<%--@elvariable id="unassigned" type="java.util.List<org.lnk.timesheet.domain.Employee>"--%>
 
 <html>
 <head>
@@ -35,7 +35,7 @@
                                 </td>
                                 <td>
                                     <input type="submit" value="Remove" id="remove-${emp.id}" />
-                                    <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+                                    <script src="/timesheet/resources/jquery-1.7.1.js"></script>
                                     <script type="text/javascript">
                                         $("#remove-${emp.id}").on("click", function() {
                                             $("#remove-${emp.id}").addClass("hidden");
@@ -70,7 +70,7 @@
                             </td>
                             <td>
                                 <input type="submit" value="Add" id="add-employee" />
-                                <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+                                <script src="/timesheet/resources/jquery-1.7.1.js"></script>
                                 <script type="text/javascript">
                                     $("#add-employee").on("click", function() {
                                         $("#selected-emp").selected().remove();
@@ -87,7 +87,7 @@
     <br /><br />
     <a href="../tasks">Go Back</a>
 
-    <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+    <script src="/timesheet/resources/jquery-1.7.1.js"></script>
     <script type="text/javascript">
         (function() {
             // prepare default form action
