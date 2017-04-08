@@ -1,4 +1,4 @@
-package org.lnk.timesheet.web;
+package org.lnk.timesheet.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,7 +12,7 @@ import org.lnk.timesheet.domain.Timesheet;
 import org.lnk.timesheet.service.dao.EmployeeDao;
 import org.lnk.timesheet.service.dao.TaskDao;
 import org.lnk.timesheet.service.dao.TimesheetDao;
-import org.lnk.timesheet.web.commands.TimesheetCommand;
+import org.lnk.timesheet.web.command.TimesheetCommand;
 import org.lnk.timesheet.web.editors.EmployeeEditor;
 import org.lnk.timesheet.web.editors.TaskEditor;
 

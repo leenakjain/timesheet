@@ -1,4 +1,4 @@
-package org.lnk.timesheet.web;
+package org.lnk.timesheet.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
