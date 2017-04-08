@@ -1,5 +1,6 @@
 package org.lnk.timesheet.controller;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,17 +9,19 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Collection;
+import java.util.List;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import org.lnk.timesheet.DomainAwareBase;
 import org.lnk.timesheet.domain.Employee;
 import org.lnk.timesheet.service.dao.EmployeeDao;
 import org.lnk.timesheet.web.exceptions.EmployeeDeleteException;
  
-import java.util.Collection;
-import java.util.List;
- 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
  
 @ContextConfiguration(locations = {"/persistence-beans.xml", "/controllers.xml"})
 public class EmployeeControllerTest extends DomainAwareBase {
