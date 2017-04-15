@@ -21,10 +21,14 @@
 	<!-- data source for our database -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName"
-			value="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" />
-		<property name="url" value="jdbc:mysql://localhost/timesheet" />
-		<property name="username" value="root" />
+<!-- 		<property name="driverClassName"	value="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" /> -->
+<!-- 		<property name="url" value="jdbc:mysql://localhost/timesheet" /> -->
+			<property name="driverClassName"	value="org.h2.Driver" />
+			<property name="url" value="jdbc:h2:mem:timesheet;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;MODE=MYSQL" />
+			
+			
+
+		<property name="username" value="sa" />
 		<property name="password" value="" />
 	</bean>
 
@@ -42,9 +46,12 @@
 		</property>
 		<property name="hibernateProperties">
 			<props>
-				<prop key="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+<!-- 				<prop key="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
+<!-- 				<prop key="hibernate.format_sql">true</prop> -->
+<!-- 				<prop key="hibernate.id.new_generator_mappings">true</prop> -->
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
 			</props>
 		</property>
 	</bean>
